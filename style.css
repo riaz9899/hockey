@@ -1,0 +1,172 @@
+/* .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    background: #FFF;;
+
+}
+.contact-progress{
+    position: relative;
+    display: flex;
+    gap: 58px;
+    justify-content: center;
+    align-items: center;
+
+}
+.progress{
+    position: relative;
+    border-radius: 50%;
+    color: #FFF;
+    background: ;
+
+} */
+.protocol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.alll{
+    display: flex;
+}
+
+    
+
+
+.circle-wrap{
+    display: grid;
+    grid-template-columns: repeat(1,160px);
+    grid-gap: 80px;
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 150px;
+    width: 150px;
+    background: #000;
+    border-radius: 50%;
+}
+.circle-wrap .circlee .mask,
+.circle-wrap .circlee .fel-1,
+.circle-wrap .circlee .fol-2,
+.circle-wrap .circlee .fol-3,
+
+.circle-wrap .circlee .fel-4{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle-wrap .circlee .mask{
+    clip: rect(0px, 150px, 150px, 75px);
+}
+/*1st progress*/
+.mask .fel-1{
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #FF4240;
+}
+.mask.full-1,
+.circlee .fel-1{
+    animation: fel-1 ease-in-out 3s;
+    transform: rotate(135deg);
+}
+@keyframes fel-1 {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(153deg);}
+}
+/*2nd progress*/
+.mask .fel-2{
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #FF4240;
+}
+.mask.full-2,
+.circlee .fel-2{
+    animation: fel-2 ease-in-out 3s;
+    transform: rotate(173deg);
+}
+@keyframes fel-2 {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(173deg);}
+}
+ 
+
+/*3rd progress*/
+.mask .fel-3{
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #FFB546;
+}
+.mask.full-3,
+.circlee .fel-3{
+    animation: fel-3 ease-in-out 3s;
+    transform: rotate(135deg);
+}
+@keyframes fel-3 {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(153deg);}
+}
+
+
+/*4th progress*/
+.mask .fel-4{
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #4C8DF1;
+}
+.mask.full-4,
+.circlee .fel-4{
+    animation: fel-4 ease-in-out 3s;
+    transform: rotate(163deg);
+}
+@keyframes fel-4 {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(163deg);}
+}
+/*progrees end*/
+.inside-circle{
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 120px;
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 13px;
+    z-index: 100;
+    font-size: 2em;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+@media screen  and (max-width:576px) {
+    .protocol{
+        display: inline;
+    }
+    
+
+
+
+
+
+}
+ 
+
+@media screen  and (max:width:576px) {
+    .footer-right>*{
+        flex:1;
+         
+    }
+    .footer-left{
+        flex:1 0px;
+    }
+    .footer-right{
+        flex:2 0px;
+    }
+    
+}

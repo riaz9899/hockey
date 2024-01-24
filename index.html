@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- google font end -->
+    <!-- cdn start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- cdn end -->
+    <style>
+        .font-style{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+     
+</head>
+<body>
+     <header class="bg-white ">
+        <nav class="flex justify-between items-center w-[85%] mx-auto mt-12 ">
+            <div class="flex items-center gap-5 ">
+                <div class="text-3xl cursor-pointer md:hidden "><svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
+                    <path d="M0.75 0.75H17.25M0.75 6H9.5M0.75 11.25H17.25" stroke="#131318" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg></div>
+                <h1 class="text-3xl font-style font-black"> Hockey <span class="text-[#FF4240]">’</span> s</h1>
+            </div>
+            <div class="md:static absolute bg-white md:min-h-fit min-h-[60vh] left-4 top-[-100%] md:w-auto w-full flex items-center px-5 ">
+                <ul class="flex  md:flex-row flex-col md:items-center md:gap-16 gap-8  ">
+                    <li> <a href="#"><span class="text-[#FF4240]">Home</span></a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Pages</a></li>
+                    <li> <a href="#">Blog</a></li>
+                    <li> <a href="#">Contact</a></li>
+                     
+                </ul>
+
+            </div>
+            <div class="flex  items-center gap-4">
+                 <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_5_6)">
+                          <path d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M21 21L15 15" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_5_6">
+                            <rect width="24" height="24" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                 </div>
+                <button class="bg-[#FF4240] text-[#FFFFFF] px-6 py-4 rounded">Get Ticket</button>
+            </div>
+
+        </nav>
+        <div class="carousel w-[85%] m-auto mt-12">
+            <!-- slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png " class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slide 2 -->
+            <!-- <div id="slide2" class="carousel-item relative w-full">
+              <img src="./Images/1.png " class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>  -->
+             
+             
+          </div>
+     </header>
+     <main class="w-[85%] m-auto">
+        <div class="my-10 py-5 border-y-2 border-dashed">
+
+            <h1 class="text-center text-4xl font-black font-style">Professional Hockeys Club</h1>
+            <p class="text-center">Hockey is a term used to denote a family of various types of both summer and winter team sports which <br> originated on either an outdoor field, sheet of ice,  or dry floor such as in a gymnasium.</p>
+        </div>
+       <div>
+          <div class="protocol" >
+          
+          <!-- 1st progress -->
+           <div>
+            <div class="alll">
+              <div class="circle-wrap">
+                <div class="circlee">
+                  <!-- 1st part -->
+                  <div class="mask full-1">
+                    <div class="fel-1">
+
+                    </div>
+
+                  </div>
+                  <!-- 2nd part -->
+                  <div class="mask half">
+                    <div class="fel-1"></div>
+
+                  </div>
+                  <div class="inside-circle">87%</div>
+                  
+
+
+                </div>
+
+              </div>
+              
+
+           </div>
+           <div class="text-center font-style ">
+            <h3 class="font-black">Prayer Facility</h3>
+           <p>Hockey is a term used to denote a family of <br> various types of both summer</p>
+           </div>
+           </div>
+          <!-- 2nd progress -->
+           <div>
+            <div class="alll">
+              <div class="circle-wrap">
+                <div class="circlee">
+                  <!-- 1st part -->
+                  <div class="mask full-1">
+                    <div class="fel-1">
+
+                    </div>
+
+                  </div>
+                  <!-- 2nd part -->
+                  <div class="mask half">
+                    <div class="fel-1"></div>
+
+                  </div>
+                  <div class="inside-circle">95%</div>
+
+
+                </div>
+
+              </div>
+
+           </div >
+           <div class="text-center font-style ">
+            <h3 class="font-black">Prayer Facility</h3>
+           <p>Hockey is a term used to denote a family of <br> various types of both summer</p>
+           </div>
+           </div>
+           
+          <!-- 3rd progress -->
+           <div>
+            <div class="alll">
+              <div class="circle-wrap">
+                <div class="circlee">
+                  <!-- 1st part -->
+                  <div class="mask full-1">
+                    <div class="fel-1">
+
+                    </div>
+
+                  </div>
+                  <!-- 2nd part -->
+                  <div class="mask half">
+                    <div class="fel-1"></div>
+
+                  </div>
+                  <div class="inside-circle">90%</div>
+
+
+                </div>
+
+              </div>
+
+           </div>
+           <div class="text-center font-style ">
+            <h3 class="font-black">Prayer Facility</h3>
+           <p>Hockey is a term used to denote a family of <br> various types of both summer</p>
+           </div>
+           </div>
+          
+          
+          <!-- 4th progress -->
+           <div>
+            <div class="alll">
+              <div class="circle-wrap">
+                <div class="circlee">
+                  <div class="mask full-4">
+                    <div class="fel-4">
+
+                    </div>
+
+                  </div>
+                  <div class="mask half">
+                    <div class="fel-4"></div>
+
+                  </div>
+                  <div class="inside-circle">80%</div>
+
+
+                </div>
+
+              </div>
+
+           </div>
+           <div class="text-center font-style  ">
+            <h3 class="font-black">Prayer Facility</h3>
+           <p>Hockey is a term used to denote a family of <br> various types of both summer</p>
+           </div>
+           </div>
+           
+    </div>
+  </div>
+       <div>
+       
+                  <section class="flex ">
+                    <div class=" w-[95%] my-5 mx-auto">
+                        <div class="my-10 py-5 border-y-2 border-dashed">
+                            <h1 class="text-center text-4xl font-black font-style"> Program Sections</h1>
+                            <p class="text-center">Hockey is a term used to denote a family of various types of both summer and winter team sports which <br> originated on either an outdoor field, sheet of ice,  or dry floor such as in a gymnasium.</p>
+                          </div>
+                           <!-- 1st row  -->
+                           <div class="grid gap-5 grid-cols-2 gri grid-rows-1 justify-center items-center">
+                              <div class="relative h-72 text-left   items-1 col-span-1">
+                                <img class="w-full h-full rounded-xl object-cover" src="./Images/2.png" alt="">
+                                <div class="text-above bottom-0 absolute top-1/2 left-1/2 w-full h-full transform translate-x-[-45%] translate-y-[5%] text-white">
+                                    <h4>  Junior Program</h4>
+                                    <p >Hockey is a term used to denote a family</p>
+                                    <button class="bg-[#FF4240] text-[#FFFFFF] px-8 py-2 rounded">Get Ticket</button>
+            
+                                </div>
+                            
+                              </div>
+                              <!-- 2nd row -->
+                              <div class="relative h-72 text-left   items-1 col-span-1">
+                                <img class="w-full h-full rounded-xl object-cover" src="./Images/3.png" alt="">
+                                <div class="text-above bottom-0 absolute top-1/2 left-1/2 w-full h-full transform translate-x-[-45%] translate-y-[5%] text-white">
+                                    <h4>  Junior Program</h4>
+                                    <p >Hockey is a term used to denote a family</p>
+                                    <button class="bg-[#FF4240] text-[#FFFFFF] px-8 py-2 rounded">Get Ticket</button>
+            
+                                </div>
+                            
+                              </div>
+                              <!-- 3rd row -->
+                              <div class="relative h-72 text-left   items-1 col-span-2 ">
+                                <img class="w-full h-full rounded-xl object-fill" src="./Images/4.png" alt="">
+                                <div class="text-above bottom-0 absolute top-1/2 left-1/2 w-full h-full transform translate-x-[-45%] translate-y-[5%] text-white">
+                                    <h4>  Junior Program</h4>
+                                    <p >Hockey is a term used to denote a family</p>
+                                    <button class="bg-[#FF4240] text-[#FFFFFF] px-8 py-2 rounded">Get Ticket</button>
+            
+                                </div>
+                            
+                              </div>
+            
+                            </div>
+                      </div>
+                  </section>
+            
+                     
+       </div>
+                   
+        
+        <div class="my-10 py-5 border-y-2 border-dashed">
+            <h1 class="text-center text-4xl font-black font-style"> Our New Products</h1>
+            <p class="text-center">Hockey is a term used to denote a family of various types of both summer and winter team sports which <br> originated on either an outdoor field, sheet of ice,  or dry floor such as in a gymnasium.</p>
+        </div>
+        <div>
+
+        </div>
+        <div class="my-10 py-5 border-y-2 border-dashed">
+          <h1 class="text-center text-4xl font-black font-style"> Clients Question</h1>
+          <p class="text-center">Hockey is a term used to denote a family of various types of both summer and winter team sports which <br> originated on either an outdoor field, sheet of ice,  or dry floor such as in a gymnasium.</p>
+      </div>
+      <div>
+
+      </div>
+      <div class="my-10 py-5 border-y-2 border-dashed">
+        <h1 class="text-center text-4xl font-black font-style"> Get In Touch</h1>
+        <p class="text-center">Hockey is a term used to denote a family of various types of both summer and winter team sports which <br> originated on either an outdoor field, sheet of ice,  or dry floor such as in a gymnasium.</p>
+    </div>
+    <!-- get in touch   -->
+    <div class=" w-[100%] m-auto flex gap-96 justify-around ">
+      <!-- 1st box -->
+      <div class="ml-0" >
+        <div class="bg-green-50 m-5 w-[100%]    p-6 px-7  rounded">
+          <span class="text-[green]"><i class="fa-solid fa-phone"></i></span> <br>
+          <span class="text-gray-400">Phone Number:</span><br>
+          <span class="text-black">+088017464215</span>
+        </div>
+        <div class="bg-orange-100 m-5 w-[100%]    p-6 px-7  rounded">
+          <span class="text-[green]"><i class="fa-solid fa-envelope"></i></span> <br>
+          <span class="text-gray-400">E-mail:</span><br>
+          <span class="text-black">
+            hockeys@support.com</span>
+        </div>
+        <div class="bg-gray-50 m-5 w-[100%]    p-6 px-7  rounded">
+          <span class="text-[green]"><i class="fa-solid fa-map-location"></i></span> <br>
+          <span class="text-gray-400">Location:</span><br>
+          <span class="text-black">152/Mohakhali Wireless Gate</span>
+        </div>
+
+      </div>
+      <!-- 1st box end -->
+      <!-- 2nd box -->
+      <div>
+        <div class="flex inline gap-2">
+          <div class="  w-48 h-18">
+            <h6 class="font-medium">Your Name</h6> <br>
+            <input class="rounded p-2 bg-gray-50" type="text" name="" id="" placeholder="Enter Your Full Name">
+          </div>
+          <div class="  w-48 h-18">
+            <h6 class="font-medium">Your E-mail</h6> <br>
+            <input class="rounded p-2 bg-gray-50" type="text" name="" id="" placeholder="Enter Your Full Name">
+          
+          </div>
+        </div>
+        <div class="flex inline mt-3 gap-2">
+          <div class="  w-48 h-18">
+             <h6 class="font-medium">Subject</h6>
+            <input class="p-2 bg-gray-50 rounded" type="text" name="" id="">
+          </div>
+          <div class=" w-48 h-18">
+            <h6 class="font-medium">Phone Number </h6>
+          <input class="p-2 bg-gray-50 rounded" type="number" name="" id="">
+          </div>
+          
+        </div>
+        <h3>Message</h3>
+        <textarea class="bg-gray-50" name="" id="" cols="51" rows="10"></textarea>
+
+      </div>
+      <!-- 2nd box end -->
+
+    </div>
+    <!--  get in touch end -->
+    <div>
+      <div class="w-[100%] mx-auto bg-[#13131808]">
+        <h1 class="text-2xl text-center font-black font-style">Social Media</h1>
+        <div class="flex items-center justify-center gap-3 py-3">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+      
+         
+    </div>
+
+     </main>
+     <footer class="mt-10 mx-0 footer w-[100%] h-[454px] bg-[#131318]  flex justify-center items-center ">
+      <div class="footer-left p-36  ">
+        <h3 class="text-white font-black  pt-4">Get In Touch</h3>
+        <p class="text-white   py-4">Hockey is a term used to denote <br> a family of various types <br> of both summer</p>
+        <span class=" mt-3 text-white"><i class= "   text-white fa-solid fa-envelope"></i>hockeys@support.com</span><br>
+        <span class=" mt-3  text-white"> <i class="   text-white fa-solid fa-phone"></i>(+62) 123-321-543</span>
+      </div>
+      <ul class="footer-right flex justify-center items-center">
+        <li class="features p-36">
+          <!-- 1st -->
+          <h2 class="text-white pt-4">Company</h2>
+          <ul class="box text-white py-4 ">
+            <li><a href="#">About us <br>
+              Leadership <br>
+              Careers <br>
+              News & Article <br>
+              Legal Notice</a></li>
+          </ul>
+        </li>
+        <!-- 2nd -->
+        <li class="features p-36">
+          <h2 class="text-white ">Company</h2>
+          <ul class="box text-white py-4 ">
+            <li><a href="#">Help Center <br>
+              FAQ <br>
+              Ticket Support <br>
+            
+              Contact Us <br></a></li>
+          </ul>
+        </li>
+        <!-- 3rd -->
+        <li class="features p-36">
+          <h2 class="text-white pt-4">Company</h2>
+          <ul class="box text-white py-4 ">
+            <li><a href="#">Academy <br>
+              Group Lesson <br>
+              Private Lesson <br>
+              Hockeys for kids <br>
+              Hockeys for Adult</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+    </footer>
+</body>
+</html>
